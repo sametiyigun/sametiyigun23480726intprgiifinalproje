@@ -1,0 +1,106 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String
+  password  String
+  role      String   @default("user") // "admin" or "user"
+  avatar    String?  // Profil fotoğrafı URL'i
+  bio       String?  // Kullanıcı hakkında
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // İlişkiler
+  enrollments    Enrollment[]
+  sentMessages   Message[] @relation("SentMessages")
+  receivedMessages Message[] @relation("ReceivedMessages")
+  createdCourses Course[] // Admin kullanıcılar kurs oluşturabilir
+
+  @@map("users")
+}
+
+model Category {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  description String?
+  color       String?  // Kategori rengi (hex kod)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // İlişkiler
+  courses Course[]
+
+  @@map("categories")
+}
+
+model Course {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  price       Float    @default(0.0)
+  duration    Int?     // Süre (saat cinsinden)
+  level       String   @default("beginner") // "beginner", "intermediate", "advanced"
+  imageUrl    String?  // Kurs görsel URL'i
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Foreign Keys
+  categoryId Int
+  instructorId Int
+
+  // İlişkiler
+  category     Category     @relation(fields: [categoryId], references: [id])
+  instructor   User         @relation(fields: [instructorId], references: [id])
+  enrollments  Enrollment[]
+
+  @@map("courses")
+}
+
+model Enrollment {
+  id           Int      @id @default(autoincrement())
+  progress     Int      @default(0) // İlerleme yüzdesi (0-100)
+  completedAt  DateTime? // Kurs tamamlanma tarihi
+  enrolledAt   DateTime @default(now())
+
+  // Foreign Keys
+  userId   Int
+  courseId Int
+
+  // İlişkiler
+  user   User   @relation(fields: [userId], references: [id])
+  course Course @relation(fields: [courseId], references: [id])
+
+  // Bir kullanıcı aynı kursa birden fazla kayıt olamaz
+  @@unique([userId, courseId])
+  @@map("enrollments")
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  content   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  // Foreign Keys
+  senderId   Int
+  receiverId Int
+
+  // İlişkiler
+  sender   User @relation("SentMessages", fields: [senderId], references: [id])
+  receiver User @relation("ReceivedMessages", fields: [receiverId], references: [id])
+
+  @@map("messages")
+}
