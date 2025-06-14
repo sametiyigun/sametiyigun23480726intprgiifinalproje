@@ -44,6 +44,7 @@ cd sametiyigun23480726intprgiifinalproje
 3. Bağımlılıkları Yükleyin ve Başlatın
 
 npm install
+
 npm run dev
 
 Uygulama http://localhost:3000 adresinde çalışmaya başlayacaktır.
