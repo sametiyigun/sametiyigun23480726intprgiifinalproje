@@ -69,32 +69,35 @@ KULLANIM KILAVUZU
 
 1. Ana Sayfa ve Giriş
 
-Projeyi çalıştırdıktan sonra ana sayfada hoş geldiniz mesajı ve giriş-kayıt butonları bulunur. Sağ üstte demo hesap bilgileri gösterilir.
+Projeyi çalıştırdıktan sonra ana sayfada hoş geldiniz mesajı ve giriş-kayıt butonları bulunur. Altta demo hesap bilgileri gösterilir.
 
-![Ana Sayfa](public/images/Ekran%20Resmi%202025-06-14%2017.13.44.png)
+![Ana Sayfa](public/images/anasayfa.png)
 
 Giriş yapmak için:
 - Sağ üstteki "Giriş Yap" butonuna tıklayın
 - Email ve şifre bilgilerinizi girin
 - "Giriş Yap" butonuna tıklayın
-
+![girisYap](public/images/girisYap.png)
 Yeni hesap oluşturmak için:
 - "Kayıt Ol" butonuna tıklayın
 - Ad, email ve şifre bilgilerinizi girin
 - "Hesap Oluştur" butonuna tıklayın
-
+![kayitOl](public/images/kayitOl.png)
 2. Dashboard (Kontrol Paneli)
+![daschboard](public/images/daschboard.png)
+Giriş yaptıktan sonra dashboard butonuna basarsanız sayfanıza yönlendirilirsiniz. Bu sayfada:
 
-Giriş yaptıktan sonra dashboard sayfasına yönlendirilirsiniz. Bu sayfada:
+![dashboardici](public/images/dashboardici.png)
+
 - Kişisel hesap bilgileriniz görünür
 - Hızlı erişim linkleri bulunur (Kurslar, Mesajlar, Profil)
 - Sistem durumu bilgileri gösterilir
 - Admin kullanıcılar için "Admin Panel" butonu görünür
 
-![Dashboard](public/images/Ekran%20Resmi%202025-06-14%2017.14.17.png)
+
 
 3. Profil Yönetimi
-
+![profilTikla](public/images/profilTikla.png)
 Profil sayfasında kullanıcı bilgilerinizi görüntüleyebilir ve düzenleyebilirsiniz:
 - Profil fotoğrafı (avatar)
 - Ad ve email bilgileri
@@ -103,42 +106,43 @@ Profil sayfasında kullanıcı bilgilerinizi görüntüleyebilir ve düzenleyebi
 - Rol bilgisi (Admin/Kullanıcı)
 
 Profil bilgilerini düzenlemek için "Düzenle" butonuna tıklayın.
+![düzenletikla](public/images/düzenletikla.png)
 
-![Profil Sayfası](public/images/Ekran%20Resmi%202025-06-14%2017.14.28.png)
 
 4. Kurslar
 
+![kurslartikla](public/images/kurslartikla.png)
 Kurslar sayfasında mevcut tüm kursları görüntüleyebilirsiniz:
 - Kurs başlığı ve açıklaması
 - Kategori bilgisi (renk kodlu)
 - Eğitmen bilgileri
 - Kurs süresi ve fiyat bilgisi
 - Kayıt sayısı
-
+![kurslar](public/images/kurslar.png)
 Kurs detaylarını görmek için "Detayları Gör" butonuna tıklayın.
 Kursa kaydolmak için "Kayıt Ol" butonunu kullanın.
 
-![Kurslar Sayfası](public/images/Ekran%20Resmi%202025-06-14%2017.14.53.png)
+
 
 5. Kurs İçerikleri
-
+![kursdetay](public/images/kursdetay.png)
 Bir kursa kaydolduktan sonra kurs detay sayfasında:
 - Sol panelde kurs bilgileri ve içerik listesi
 - Sağ panelde seçilen içerik gösterilir
 - Farklı içerik türleri: Giriş ve Kurulum, Temel Kavramlar, İlk Proje, Blog Tasarı, İleri Konular
 
-![Kurs İçerikleri](public/images/Ekran%20Resmi%202025-06-14%2017.15.03.png)
+
 
 6. Mesajlaşma Sistemi
-
+![mesajtikla](public/images/mesajtikla.png)
 Mesajlar sayfasında diğer kullanıcılarla iletişim kurabilirsiniz:
 - Sol panelde kullanıcı listesi
 - Sağ panelde seçilen kullanıcıyla mesaj geçmişi
 - Alt kısımda mesaj yazma alanı
 - "Gönder" butonu ile mesaj gönderme
-
+![mesajlaşma](public/images/mesajlaşma.png)
 7. Admin Panel (Sadece Admin Kullanıcıları)
-
+![adminpaneltikla](public/images/adminpaneltikla.png)
 Admin hesabıyla giriş yaptığınızda erişebileceğiniz özellikler:
 
 Kullanıcı Yönetimi:
@@ -147,7 +151,7 @@ Kullanıcı Yönetimi:
 - Kullanıcı silme işlemleri
 - Kullanıcı istatistikleri (mesaj ve kurs sayıları)
 
-![Admin Panel](public/images/Ekran%20Resmi%202025-06-14%2017.14.36.png)
+![adminpaneldetay](public/images/adminpaneldetay.png)
 
 Sistem İstatistikleri:
 - Toplam kullanıcı sayısı
