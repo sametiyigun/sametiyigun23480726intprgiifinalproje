@@ -36,6 +36,18 @@ Proje GitHub'dan indirildikten sonra hemen çalıştırılabilir durumda gelir!
 1. Gereksinimler
 Sisteminizde Node.js (v18 veya üzeri) ve npm yüklü olmalıdır.
 
+Node.js ve npm kurulumu:
+
+MAC İÇİN:
+- Yöntem 1: https://nodejs.org adresine gidin ve "LTS" sürümünü indirip kurun
+- Yöntem 2: Homebrew kullanarak: "brew install node" (önce Homebrew kurmanız gerekir)
+- Kurulum kontrolü: Terminal'de "node --version" ve "npm --version" komutlarını çalıştırın
+
+WINDOWS İÇİN:
+- https://nodejs.org adresine gidin ve "LTS" sürümünü indirin (.msi dosyası)
+- İndirilen dosyayı çalıştırın ve kurulum sihirbazını takip edin
+- Kurulum kontrolü: Komut İstemi'nde "node --version" ve "npm --version" komutlarını çalıştırın
+
 2. Projeyi İndirin
 git clone https://github.com/sametiyigun/sametiyigun23480726intprgiifinalproje.git
 
