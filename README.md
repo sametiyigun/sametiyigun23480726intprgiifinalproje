@@ -31,32 +31,28 @@ Doğrulama ve Yardımcı Araçlar:
 
 KURULUM TALIMATLARI
 
+Proje GitHub'dan indirildikten sonra hemen çalıştırılabilir durumda gelir!
+
 1. Gereksinimler
 Sisteminizde Node.js (v18 veya üzeri) ve npm yüklü olmalıdır.
 
 2. Projeyi İndirin
-git clone komutu ile projeyi bilgisayarınıza indirin veya zip dosyasını çıkarın.
+git clone https://github.com/kullanici-adi/repo-adi.git
+cd repo-adi
 
-3. Bağımlılıkları Yükleyin
-Proje klasörünün içinde terminal açın ve şu komutu çalıştırın:
+3. Bağımlılıkları Yükleyin ve Başlatın
 npm install
-
-4. Ortam Değişkenlerini Ayarlayın
-Proje ana dizininde .env adında bir dosya oluşturun ve içine şu bilgileri yazın:
-DATABASE_URL="file:./dev.db"
-NEXTAUTH_SECRET="your-secret-key-here"
-NEXTAUTH_URL="http://localhost:3000"
-
-5. Veritabanını Hazırlayın
-Sırasıyla şu komutları çalıştırın:
-npx prisma generate
-npx prisma migrate dev
-npx prisma db seed
-
-6. Uygulamayı Başlatın
 npm run dev
 
 Uygulama http://localhost:3000 adresinde çalışmaya başlayacaktır.
+
+NOT: Proje .env dosyası ve örnek veritabanı ile birlikte gelir, ek kurulum gerekmez!
+
+ÖNEMLI: Proje GitHub'da public repository olarak paylaşılmaya hazır durumda:
+- .env dosyası demo değerleri ile proje dahilinde
+- SQLite veritabanı (dev.db) örnek verilerle dolu olarak dahil
+- npm install sonrası otomatik prisma generate çalışır
+- Hiçbir ek konfigürasyon gerekmez
 
 ADMIN GIRIS BILGILERI
 
