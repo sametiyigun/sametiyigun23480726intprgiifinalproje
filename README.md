@@ -106,7 +106,8 @@ Profil sayfasında kullanıcı bilgilerinizi görüntüleyebilir ve düzenleyebi
 - Rol bilgisi (Admin/Kullanıcı)
 
 Profil bilgilerini düzenlemek için "Düzenle" butonuna tıklayın.
-![düzenletikla](public/images/düzenletikla.png)
+
+![düzenletikla](public/images/duzenletikla.png)
 
 
 4. Kurslar
