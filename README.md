@@ -140,7 +140,9 @@ Mesajlar sayfasında diğer kullanıcılarla iletişim kurabilirsiniz:
 - Sağ panelde seçilen kullanıcıyla mesaj geçmişi
 - Alt kısımda mesaj yazma alanı
 - "Gönder" butonu ile mesaj gönderme
-![mesajlaşma](public/images/mesajlaşma.png)
+
+![mesajlasma](public/images/mesajlasma.png)
+
 7. Admin Panel (Sadece Admin Kullanıcıları)
 ![adminpaneltikla](public/images/adminpaneltikla.png)
 Admin hesabıyla giriş yaptığınızda erişebileceğiniz özellikler:
