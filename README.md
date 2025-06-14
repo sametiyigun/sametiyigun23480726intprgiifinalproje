@@ -38,9 +38,11 @@ Sisteminizde Node.js (v18 veya üzeri) ve npm yüklü olmalıdır.
 
 2. Projeyi İndirin
 git clone https://github.com/sametiyigun/sametiyigun23480726intprgiifinalproje.git
+
 cd sametiyigun23480726intprgiifinalproje
 
 3. Bağımlılıkları Yükleyin ve Başlatın
+
 npm install
 npm run dev
 
