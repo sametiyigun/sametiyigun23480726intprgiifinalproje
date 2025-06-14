@@ -37,8 +37,8 @@ Proje GitHub'dan indirildikten sonra hemen çalıştırılabilir durumda gelir!
 Sisteminizde Node.js (v18 veya üzeri) ve npm yüklü olmalıdır.
 
 2. Projeyi İndirin
-git clone https://github.com/kullanici-adi/repo-adi.git
-cd repo-adi
+git clone https://github.com/sametiyigun/sametiyigun23480726intprgiifinalproje.git
+cd sametiyigun23480726intprgiifinalproje
 
 3. Bağımlılıkları Yükleyin ve Başlatın
 npm install
@@ -48,11 +48,6 @@ Uygulama http://localhost:3000 adresinde çalışmaya başlayacaktır.
 
 NOT: Proje .env dosyası ve örnek veritabanı ile birlikte gelir, ek kurulum gerekmez!
 
-ÖNEMLI: Proje GitHub'da public repository olarak paylaşılmaya hazır durumda:
-- .env dosyası demo değerleri ile proje dahilinde
-- SQLite veritabanı (dev.db) örnek verilerle dolu olarak dahil
-- npm install sonrası otomatik prisma generate çalışır
-- Hiçbir ek konfigürasyon gerekmez
 
 ADMIN GIRIS BILGILERI
 
