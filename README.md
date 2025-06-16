@@ -1,4 +1,4 @@
-SametIyigun23480726IntPrgIIFinalProje - Kurs Yönetim Sistemi
+SametIyigun23480726IntPrgIIFinalProje
 
 PROJE TANIMI
 
@@ -31,27 +31,14 @@ Doğrulama ve Yardımcı Araçlar:
 
 KURULUM TALIMATLARI
 
-Proje GitHub'dan indirildikten sonra hemen çalıştırılabilir durumda gelir!
-
 1. Gereksinimler
 Sisteminizde Node.js (v18 veya üzeri) ve npm yüklü olmalıdır.
 
-Node.js ve npm kurulumu:
-
-MAC İÇİN:
-- Yöntem 1: https://nodejs.org adresine gidin ve "LTS" sürümünü indirip kurun
-- Yöntem 2: Homebrew kullanarak: "brew install node" (önce Homebrew kurmanız gerekir)
-- Kurulum kontrolü: Terminal'de "node --version" ve "npm --version" komutlarını çalıştırın
-
-WINDOWS İÇİN:
-- https://nodejs.org adresine gidin ve "LTS" sürümünü indirin (.msi dosyası)
-- İndirilen dosyayı çalıştırın ve kurulum sihirbazını takip edin
-- Kurulum kontrolü: Komut İstemi'nde "node --version" ve "npm --version" komutlarını çalıştırın
-
 2. Projeyi İndirin
+
 git clone https://github.com/sametiyigun/sametiyigun23480726intprgiifinalproje.git
 
-cd sametiyigun23480726intprgiifinalproje
+cd sametiyigun23480726intprgiifinalproje  ,  yada proje içinde bir terminal başlatın. (VSCode ile açabilirsiniz.)
 
 3. Bağımlılıkları Yükleyin ve Başlatın
 
@@ -61,20 +48,25 @@ npm run dev
 
 Uygulama http://localhost:3000 adresinde çalışmaya başlayacaktır.
 
-NOT: Proje .env dosyası ve örnek veritabanı ile birlikte gelir, ek kurulum gerekmez!
+NOT: Proje .env dosyası ve örnek veritabanı ile birlikte gelir, ek kurulum gerekmez.
 
 
 ADMIN GIRIS BILGILERI
 
 Test amaçlı admin hesabı:
+
 Email: admin@example.com
+
 Şifre: admin123
 
 Bu hesap ile giriş yaptığınızda admin paneline erişebilir, tüm kullanıcıları yönetebilir ve sistem istatistiklerini görüntüleyebilirsiniz.
 
 Ek test hesapları:
+
 Email: user1@example.com, Şifre: user123
+
 Email: user2@example.com, Şifre: user123
+
 Email: user3@example.com, Şifre: user123
 
 KULLANIM KILAVUZU
